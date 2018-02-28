@@ -1,7 +1,8 @@
 #!/bin/bash
 
 hexo generate
-cp -R public/* ../../lianchi.github.io
+rm -rf ../../lianchi.github.io/*
+cp -r public/* ../../lianchi.github.io
 cd ../../lianchi.github.io
 git add .
 git commit -m "update"
