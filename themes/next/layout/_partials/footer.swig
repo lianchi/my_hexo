@@ -1,7 +1,8 @@
 <div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
+#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &dash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
+  &nbsp;
   <span class="with-love">
     <i class="fa fa-{{ theme.footer.icon }}"></i>
   </span>
